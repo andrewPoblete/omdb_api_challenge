@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OMDB API Challenge</title>
+  <script type="text/javascript" src="vendor/jquery/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="js/base.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel='stylesheet' href='css/base.css'>
+</head>
+<body class="container">
+    <div class="row">
+      <form id="search-by-title-form">
+        <h2>Search for Movies</h2>
+        <div>
+            <label>Title:</label>
+            <input type="text" id="t" name="t">
+            &nbsp;&nbsp;
+            <label>Year:</label>
+            <input type="text" id="y" name="y" style="width: 100px;">
+            &nbsp;&nbsp;
+            <label>Plot:</label>
+            <select name="plot" style="width: 100px;">
+                <option value="short" selected="">Short</option>
+                <option value="full">Full</option>
+            </select>
+            &nbsp;&nbsp;
+            <label>Response:</label>
+            <select name="r" style="width: 100px;">
+                <option value="json">JSON</option>
+                <option value="xml">XML</option>
+            </select>
+            &nbsp;&nbsp;
+            <button id="search-by-title-button" type="button">Search</button>
+            <button id="search-by-title-reset" type="reset">Reset</button>
+        </div>
+        <div class="hide" id="search-by-title-request">
+            <br />
+            <p>Request:</p>
+            <pre>
+              <!-- put the api request url here -->
+            </pre>
+        </div>
+        <div class="hide" id="search-by-title-response">
+            <p>Response:</p>
+            <pre>
+                <!-- put the api response object here -->
+            </pre>
+        </div>
+      </form>
+    </div>
+
+    <div class="row">
+          <article class="col-sm-4 hidden">
+
+            <img class="movie-poster img-thumbnail img-responsive center-block" src="">
+
+            <div class="col-md-12">
+              
+              <p class="movie-genre pull-right small">Genre, Genre, Genre</p>
+              <h2 class="title movie-title">Movie Title <small class="movie-year">2004</small></h2>
+              <p class="movie-description">Generic things happens to generic people leading to generic results. An average film that we somewhat recommend for you to watch if you'd like to of course.</p>
+              
+              <ul class="movie-actors">
+                <li>Famous Actress</li>
+                <li>Famous Actor</li>
+              </ul>
+
+              <div class="social pull-right">
+                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+              </div>
+
+            </div>
+        </template>
+    </div>
+
+</body>
+</html>

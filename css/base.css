@@ -1,0 +1,17 @@
+/*Nothing here yet!*/
+.glyphicon-thumbs-up {
+	color: green;
+}
+
+.glyphicon-heart {
+	color: red;
+}
+
+.glyphicon.gray {
+	color: gray;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
